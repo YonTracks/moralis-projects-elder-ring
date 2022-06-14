@@ -30,9 +30,6 @@ namespace MoralisUnity.Kits.AuthenticationKit
         [Header("Platforms")]
         [SerializeField] 
         private GameObject _iosPlatform = null;
-
-		[SerializeField] 
-        private GameObject _webGlPlatform = null;
         
         [SerializeField] 
         private GameObject _walletConnectPlatform = null;
@@ -97,7 +94,6 @@ namespace MoralisUnity.Kits.AuthenticationKit
 					_iosPlatform.SetActive(true);
 					break;
 				case AuthenticationKitPlatform.WebGL:
-					_webGlPlatform.SetActive(true);
 					break;
 				case AuthenticationKitPlatform.WalletConnect:
 					_walletConnectPlatform.SetActive(true);

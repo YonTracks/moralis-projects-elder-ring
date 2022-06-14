@@ -101,7 +101,7 @@ namespace Web3_Elden_Ring
             
             HexBigInteger value = new HexBigInteger(0);
             HexBigInteger gas = new HexBigInteger(0);
-            HexBigInteger gasPrice = new HexBigInteger(0); //Higher than "GetItem" transaction
+            HexBigInteger gasPrice = new HexBigInteger(1); //Higher than "GetItem" transaction
             
             string resp = await Moralis.ExecuteContractFunction(GameManager.RuneContractAddress, GameManager.RuneContractAbi, "getExperience", parameters, value, gas, gasPrice);
             
